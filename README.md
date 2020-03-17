@@ -32,7 +32,9 @@ https://www.amazon.co.jp/%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%88%E3%82%A2%E3%83%83%
 ●Route
   
 (1)URLから「registration」のリクエストを受け取り、
+  
 (2)コントローラの「RegistrationController」の
+  
 (3)「Start()」メソッドを実行する。
   
 ・routes/web.php
@@ -49,14 +51,14 @@ Route::get('registration', 'RegistrationController@Start');
   
 ・app/Http/Controllers/RegistrationController.php
   
-↑追加で必要なこと
+↑追加で必要なこと  
   
-●DB(モデルで生成)
+●DB(モデルで生成)  
+
   
+◇クライアント側  
   
-◇クライアント側
-  
-3.JSONデータ受け取り、
+3.JSONデータ受け取り、  
 クライアント側のDB(SQLite)に保存する。
 
 ---------------
