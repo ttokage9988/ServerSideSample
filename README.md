@@ -1,7 +1,7 @@
 # ServerSideSample
 ServerSideSample for Laravel from C# web request (Unity)
   
-サーバー側(Laravel使用)の通信のやり取りについて
+サーバー側(Laravel)の通信のやり取りについて
 （クライアント側は、一部割愛します。）
   
 ・参考書籍<br>
@@ -11,7 +11,7 @@ ServerSideSample for Laravel from C# web request (Unity)
 # ユーザ登録処理
   
   
-## ◇クライアント側
+## ◇クライアント側(Unity)
   
 ・サーバー側にリクエストを送信する。  
   
@@ -26,7 +26,7 @@ UnityWebRequest request = UnityWebRequest.Get(URL);
 yield return request.SendWebRequest();
 ```
   
-## ◇サーバー側  
+## ◇サーバー側 (Laravel)
 
 受け取ったリクエストを扱う経路を辿り、
 制御（Controller）の処理を実行する。
@@ -63,7 +63,7 @@ Route::get('registration', 'RegistrationController@Start');
 LaravelのMigration機能でテーブルを作成しています。
 
 
-## ◇クライアント側
+## ◇クライアント側(Unity)
 
 JSONデータ受け取り、クライアント側のDB(SQLite)に保存します。
 
